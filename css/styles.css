@@ -165,8 +165,6 @@ text-decoration-color: #2196F3;*/
     display: flex;
     align-items: center;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .menu-contact:not(:last-child) {
@@ -212,7 +210,9 @@ text-decoration-color: #2196F3;*/
         48, 58, 0.4),rgba(47, 48, 58, 0.4)), url('../images/bg.jpg');
     background: #C4C4C4(47, 48, 58, 0.4);
     background-size: cover;
-    background-position: border-box;
+    background-position: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -441,11 +441,11 @@ text-decoration-color: #2196F3;*/
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-    fill: #FFFFFF;
+    fill: var(--secondary-color);
 }
 
 .social-list-icon {
-    fill: #AFB1B8;
+    transition: fill #AFB1B8;
 }
 /* ================= /TEAM  ================= */
 /* ================= CLIENTS  ================= */
@@ -481,7 +481,7 @@ text-decoration-color: #2196F3;*/
 
 
 .clients-list-icon {
-    fill: #AFB1B8;
+    transition: fill #AFB1B8;
 }
 /*  ================= /MAIN  ================= */
 /* /BODY */
@@ -579,7 +579,7 @@ text-decoration-color: #2196F3;*/
 }
 
 .footer-social-list-icon {
-    fill: #FFFFFF;
+    fill: var(--secondary-color);
 }
 /*  ================= /FOOTER  =================*/
 
@@ -611,7 +611,7 @@ text-decoration-color: #2196F3;*/
 
     width: 528px;
     height: 581px;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-color);
 }
 
 .modal-close-btn {
@@ -625,7 +625,7 @@ text-decoration-color: #2196F3;*/
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: var(--secondary-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: border-color var(--transition-duration-and-func);
@@ -680,7 +680,7 @@ text-decoration-color: #2196F3;*/
 
 .menu-btn:hover,
 .menu-btn:focus {
-    color: #FFFFFF;
+    color: var(--secondary-color);
     background-color: var(--ternary-bacground);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -737,7 +737,7 @@ text-decoration-color: #2196F3;*/
 }
 
 .portfolio-subscription {
-    border: 1px solid #EEEEEE;
+    border: 1px solid var(--primary-color);
     border-top: none;
     padding-top: 20px;
     padding-bottom: 20px;
