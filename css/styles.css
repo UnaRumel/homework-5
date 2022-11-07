@@ -431,7 +431,7 @@ text-decoration-color: #2196F3;*/
     color: #AFB1B8;
     background-color: var(--primary-background);
     border: none;
-    transition: background-color var(--transition-duration-and-func), fill var(--transition-duration-and-func);
+    transition: background-color var(--transition-duration-and-func), color var(--transition-duration-and-func);
 }
 
 .social-list-link:hover,
@@ -453,7 +453,8 @@ text-decoration-color: #2196F3;*/
 }
 
 .clients-list-icon {
-    fill: #AFB1B8
+    fill: #AFB1B8;
+    fill var(--transition-duration-and-func);
 }
 
 .clients-list-link {
@@ -464,7 +465,7 @@ text-decoration-color: #2196F3;*/
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: fill var(--transition-duration-and-func), border var(--transition-duration-and-func);
+    transition: , border var(--transition-duration-and-func);
 }
 
 
@@ -727,6 +728,7 @@ text-decoration-color: #2196F3;*/
 
 .portfolio-link {
     display: block;
+    transition: box-shadow var(--transition-duration-and-func);
 }
 
 .portfolio-link-wrapper {
