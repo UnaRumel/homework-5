@@ -437,15 +437,12 @@ text-decoration-color: #2196F3;*/
 .social-list-link:hover,
 .social-list-link:focus {
     background-color: var(--ternary-bacground);
+    color: var(--secondary-color)
 }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--secondary-color);
-}
 
 .social-list-icon {
-    transition: fill #AFB1B8;
+    fill: currentColor;
 }
 /* ================= /TEAM  ================= */
 /* ================= CLIENTS  ================= */
@@ -455,7 +452,8 @@ text-decoration-color: #2196F3;*/
     gap: 30px;
 }
 
-.clients-list-item {
+.clients-list-icon {
+    fill: #AFB1B8
 }
 
 .clients-list-link {
@@ -469,6 +467,8 @@ text-decoration-color: #2196F3;*/
     transition: fill var(--transition-duration-and-func), border var(--transition-duration-and-func);
 }
 
+
+
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
     fill: var(--quaternary-text-color);
@@ -480,9 +480,7 @@ text-decoration-color: #2196F3;*/
 }
 
 
-.clients-list-icon {
-    transition: fill #AFB1B8;
-}
+
 /*  ================= /MAIN  ================= */
 /* /BODY */
 
